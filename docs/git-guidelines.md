@@ -25,7 +25,7 @@ We use the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/
 - ```<footer>```: References to issues, breaking changes, etc. (optional).
 
 
-## Rules
+### Rules
 1. Use present tense: "Fix bug" not "Fixed bug".
 2. Keep the summary under 50 characters for readability in logs.
 3. Wrap body text at 72 characters for clean formatting.
@@ -160,6 +160,97 @@ Update frontend to match new structure.
 BREAKING CHANGE: Clients must update API parsing logic.
 Closes #78
 ```
+
+
+## Creating Message
+
+Here’s how to create a Git commit message with a short summary, body, and footer (details) using the general Git command structure.
+
+### General Git Command Structure
+You can use git commit with the -m flag to specify the message. For multi-line messages (summary, body, and footer), you can either:
+
+1. Use multiple -m flags (one per paragraph).
+2. Open an editor by omitting -m or using -e.
+
+#### Option 1: Using Multiple -m Flags
+
+```bash
+git commit -m "<type>(<scope>): <short summary>" -m "<body>" -m "<footer>"
+```
+
+- Each -m creates a new paragraph in the commit message.
+- The first -m is the summary (50 characters max).
+- Subsequent -m flags add the body and footer.
+
+#### Option 2: Using the Editor
+
+```bash
+git commit
+```
+
+- This opens your default text editor (e.g., Vim, Nano, or VS Code if configured).
+- Type the full message with summary, body, and footer, separated by blank lines.
+- Save and exit the editor to commit.
+
+
+### Examples
+
+#### Example 1: Using Multiple -m Flags
+
+```bash
+git commit -m "feat(api): add user profile endpoint" -m "Implement GET /api/user/{id} to fetch user details. Add validation and error handling for invalid IDs." -m "Closes #45"
+```
+
+#### Resulting Commit Message:
+
+```
+feat(api): add user profile endpoint
+
+Implement GET /api/user/{id} to fetch user details.
+Add validation and error handling for invalid IDs.
+
+Closes #45
+```
+
+#### Example 2: Using the Editor
+
+Open editor:
+
+```bash
+git commit
+```
+
+In the editor, type:
+
+```
+feat(frontend): add dark mode toggle
+
+Add CSS variables and toggle button for dark mode.
+Tested on Chrome and Firefox for consistency.
+
+Refs #72
+```
+
+Save and exit (e.g., ```:wq``` in Vim).
+
+#### Resulting Commit Message:
+
+```
+feat(frontend): add dark mode toggle
+
+Add CSS variables and toggle button for dark mode.
+Tested on Chrome and Firefox for consistency.
+
+Refs #72
+```
+
+### Tips
+
+- **Staging First**: Always stage changes with git add . or git add <file> before committing.
+- **Editor Config**: Set your preferred editor with git config --global core.editor "nano" (or code --wait for VS Code).
+- **Line Wrapping**: Keep the body at 72 characters per line for readability (most editors show a guide).
+- **Amend**: If you mess up, use git commit --amend to edit the last commit.
+
 
 
 ## Changelog Management

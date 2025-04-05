@@ -173,7 +173,7 @@ services:
             - sail
 
     ldap:
-        image: osixia/openldap:1.5.0
+        image: osixia/openldap:latest
         ports:
             - "389:389"
         environment:

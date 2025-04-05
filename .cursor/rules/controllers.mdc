@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+This file describes the best practices and conventions to be followed regarding controller classes within the Laravel application.
+
+- Controllers should be Single Action Controllers (invokable) unless otherwise specified.
+- Action classes should be dependency injected
+- Responses should be in the form of a data collection, or api resource class, of some kind so that the type is known.
+
+Example controller:
+
+```php
+<?php
+
+namespace App\Http\Controllers;
+
+use App\Domain\Messaging\Actions\GetPostsAction;
+use App\Http\Controllers\Controller;
+use App\Http\Resources\PostCollection;
+
+class GetPosts extends Controller
+{
+    /**
+     * Handle the incoming request.
+     */
+    public function __invoke(string $user_uuid, GetPostsAction $action)
+    {
+        $posts = $action->handle($user_uuid);
+
+        return new PostCollection($messages);
+    }
+}
+
+```

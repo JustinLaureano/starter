@@ -1,0 +1,10 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+This file describes the best practices and conventions to be followed regarding routing within the Laravel application.
+
+- All routes should be named with the conventional laravel dot syntax.
+- All routes should be handled via controller classes.
+- Use route model binding when appropriate

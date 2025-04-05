@@ -172,6 +172,34 @@ services:
         networks:
             - sail
 
+    ldap:
+        image: osixia/openldap:1.5.0
+        ports:
+            - "389:389"
+        environment:
+            LDAP_ORGANISATION: "Example Inc."
+            LDAP_DOMAIN: "example.local"
+            LDAP_ADMIN_PASSWORD: "adminpassword"
+        volumes:
+            - ldap-data:/var/lib/ldap
+            - ldap-config:/etc/ldap/slapd.d
+        networks:
+            - sail
+
+    phpldapadmin:
+        image: osixia/phpldapadmin:latest
+        container_name: phpldapadmin
+        environment:
+            PHPLDAPADMIN_LDAP_HOSTS: "ldap"
+            PHPLDAPADMIN_HTTPS: "false"
+        ports:
+            - "8080:80"
+        depends_on:
+            - ldap
+        networks:
+            - sail
+
+
 
 networks:
     sail:
@@ -187,4 +215,8 @@ volumes:
     glitchtip-postgres:
         driver: local
     glitchtip-uploads:
+        driver: local
+    ldap-data:
+        driver: local
+    ldap-config:
         driver: local

@@ -1,0 +1,26 @@
+username,givenname,sn,displayname,title,description,department,mail
+it.admin,Cassius,Marcellus,"Cassius, Marcellus",IT Administrator,IT Administrator,Information Technology,it.admin@acme.com
+accountant,Wendy,Green,"Wendy, Green",Accountant,Accountant,Finance,accountant@acme.com
+electrical.engineer,Mathew,Klein,"Mathew, Klein",Electrical Engineer,Electrical Engineer,Engineering,electrical.engineer@acme.com
+esh.facilitator,Lawrence,Glover,"Lawrence, Glover",ESH Facilitator,ESH Facilitator,Environmental Safety and Health,esh.facilitator@acme.com
+hr.assistant,Addie,Tremblay,"Addie, Tremblay",HR Assistant,HR Assistant,Human Resources,hr.assistant@acme.com
+industrial.engineer,Nico,Buckridge,"Nico, Buckridge",Industrial Engineer,Industrial Engineer,Engineering,industrial.engineer@acme.com
+irm.manager,Gregory,Gleason,"Gregory, Gleason",IRM Manager,IRM Manager,Manufacturing,irm.manager@acme.com
+irm.operator,Orlando,West,"Orlando, West",IRM Production Operator,IRM Production Operator,Manufacturing,irm.operator@acme.com
+lab.technician,Jonas,Koepp,"Jonas, Koepp",Lab Technician,Lab Technician,Product Development,lab.technician@acme.com
+line.leader,Aaron,Bartell,"Aaron, Bartell",Line Leader,Line Leader,Manufacturing,line.leader@acme.com
+maintenance.technician,Leslie,Keebler,"Leslie, Keebler",Maintenance Technician,Maintenance Technician,Maintenance,maintenance.technician@acme.com
+materials.control,Noel,Powlowski,"Noel, Powlowski",Materials Control,Materials Control,Production Control,materials.control@acme.com
+materials.manager,Charley,Olsen,"Charley, Olsen",Materials Manager,Materials Manager,Production Control,materials.manager@acme.com
+materials.planner,Robby,Johns,"Robby, Johns",Materials Planner,Materials Planner,Production Control,materials.planner@acme.com
+mold.cleaner,Stan,Blick,"Stan, Blick",Mold Cleaner,Mold Cleaner,Production Systems,mold.cleaner@acme.com
+process.engineer,Hester,Davis,"Hester, Davis",Process Engineer,Process Engineer,Engineering,process.engineer@acme.com
+production.scheduler,Kirk,Miller,"Kirk, Miller",Production Scheduler,Production Scheduler,Production Control,production.scheduler@acme.com
+production.supervisor,Ann,McCullough,"Ann, McCullough",Production Supervisor,Production Supervisor,Manufacturing Group,production.supervisor@acme.com
+quality.engineer,Alexandra,Herman,"Alexandra, Herman",Quality Engineer,Quality Engineer,Quality,quality.engineer@acme.com
+quality.technician,Vickie,Roberts,"Vickie, Roberts",Quality Technician,Quality Technician,Quality,quality.technician@acme.com
+quality.manager,Morris,Thompson,"Morris, Thompson",Quality Manager,Quality Manager,Quality,quality.manager@acme.com
+receiving.clerk,Willow,Barton,"Willow, Barton",Receiving Clerk,Receiving Clerk,Production Control,receiving.clerk@acme.com
+shipping.clerk,Jordan,Armstrong,"Jordan, Armstrong",Shipping Clerk,Shipping Clerk,Production Control,shipping.clerk@acme.com
+shipping.supervisor,Elena,Purdy,"Elena, Purdy",Shipping Supervisor,Shipping Supervisor,Production Control,shipping.supervisor@acme.com
+technical.administrator,Todd,Fisher,"Todd, Fisher",Technical Administrator,Technical Administrator,Information Technology,technical.administrator@acme.com

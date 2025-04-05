@@ -1,0 +1,330 @@
+# Organizational Unit for Users
+dn: ou=users,dc=example,dc=local
+objectClass: organizationalUnit
+ou: users
+
+# User: it.admin
+dn: uid=it.admin,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: it.admin
+givenName: Cassius
+sn: Marcellus
+displayName: Cassius, Marcellus
+title: IT Administrator
+description: IT Administrator
+department: Information Technology
+mail: it.admin@acme.com
+userPassword: password123
+
+# User: accountant
+dn: uid=accountant,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: accountant
+givenName: Wendy
+sn: Green
+displayName: Wendy, Green
+title: Accountant
+description: Accountant
+department: Finance
+mail: accountant@acme.com
+userPassword: password123
+
+# User: electrical.engineer
+dn: uid=electrical.engineer,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: electrical.engineer
+givenName: Mathew
+sn: Klein
+displayName: Mathew, Klein
+title: Electrical Engineer
+description: Electrical Engineer
+department: Engineering
+mail: electrical.engineer@acme.com
+userPassword: password123
+
+# User: esh.facilitator
+dn: uid=esh.facilitator,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: esh.facilitator
+givenName: Lawrence
+sn: Glover
+displayName: Lawrence, Glover
+title: ESH Facilitator
+description: ESH Facilitator
+department: Environmental Safety and Health
+mail: esh.facilitator@acme.com
+userPassword: password123
+
+# User: hr.assistant
+dn: uid=hr.assistant,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: hr.assistant
+givenName: Addie
+sn: Tremblay
+displayName: Addie, Tremblay
+title: HR Assistant
+description: HR Assistant
+department: Human Resources
+mail: hr.assistant@acme.com
+userPassword: password123
+
+# User: industrial.engineer
+dn: uid=industrial.engineer,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: industrial.engineer
+givenName: Nico
+sn: Buckridge
+displayName: Nico, Buckridge
+title: Industrial Engineer
+description: Industrial Engineer
+department: Engineering
+mail: industrial.engineer@acme.com
+userPassword: password123
+
+# User: irm.manager
+dn: uid=irm.manager,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: irm.manager
+givenName: Gregory
+sn: Gleason
+displayName: Gregory, Gleason
+title: IRM Manager
+description: IRM Manager
+department: Manufacturing
+mail: irm.manager@acme.com
+userPassword: password123
+
+# User: irm.operator
+dn: uid=irm.operator,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: irm.operator
+givenName: Orlando
+sn: West
+displayName: Orlando, West
+title: IRM Production Operator
+description: IRM Production Operator
+department: Manufacturing
+mail: irm.operator@acme.com
+userPassword: password123
+
+# User: lab.technician
+dn: uid=lab.technician,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: lab.technician
+givenName: Jonas
+sn: Koepp
+displayName: Jonas, Koepp
+title: Lab Technician
+description: Lab Technician
+department: Product Development
+mail: lab.technician@acme.com
+userPassword: password123
+
+# User: line.leader
+dn: uid=line.leader,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: line.leader
+givenName: Aaron
+sn: Bartell
+displayName: Aaron, Bartell
+title: Line Leader
+description: Line Leader
+department: Manufacturing
+mail: line.leader@acme.com
+userPassword: password123
+
+# User: maintenance.technician
+dn: uid=maintenance.technician,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: maintenance.technician
+givenName: Leslie
+sn: Keebler
+displayName: Leslie, Keebler
+title: Maintenance Technician
+description: Maintenance Technician
+department: Maintenance
+mail: maintenance.technician@acme.com
+userPassword: password123
+
+# User: materials.control
+dn: uid=materials.control,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: materials.control
+givenName: Noel
+sn: Powlowski
+displayName: Noel, Powlowski
+title: Materials Control
+description: Materials Control
+department: Production Control
+mail: materials.control@acme.com
+userPassword: password123
+
+# User: materials.manager
+dn: uid=materials.manager,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: materials.manager
+givenName: Charley
+sn: Olsen
+displayName: Charley, Olsen
+title: Materials Manager
+description: Materials Manager
+department: Production Control
+mail: materials.manager@acme.com
+userPassword: password123
+
+# User: materials.planner
+dn: uid=materials.planner,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: materials.planner
+givenName: Robby
+sn: Johns
+displayName: Robby, Johns
+title: Materials Planner
+description: Materials Planner
+department: Production Control
+mail: materials.planner@acme.com
+userPassword: password123
+
+# User: mold.cleaner
+dn: uid=mold.cleaner,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: mold.cleaner
+givenName: Stan
+sn: Blick
+displayName: Stan, Blick
+title: Mold Cleaner
+description: Mold Cleaner
+department: Production Systems
+mail: mold.cleaner@acme.com
+userPassword: password123
+
+# User: process.engineer
+dn: uid=process.engineer,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: process.engineer
+givenName: Hester
+sn: Davis
+displayName: Hester, Davis
+title: Process Engineer
+description: Process Engineer
+department: Engineering
+mail: process.engineer@acme.com
+userPassword: password123
+
+# User: production.scheduler
+dn: uid=production.scheduler,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: production.scheduler
+givenName: Kirk
+sn: Miller
+displayName: Kirk, Miller
+title: Production Scheduler
+description: Production Scheduler
+department: Production Control
+mail: production.scheduler@acme.com
+userPassword: password123
+
+# User: production.supervisor
+dn: uid=production.supervisor,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: production.supervisor
+givenName: Ann
+sn: McCullough
+displayName: Ann, McCullough
+title: Production Supervisor
+description: Production Supervisor
+department: Manufacturing Group
+mail: production.supervisor@acme.com
+userPassword: password123
+
+# User: quality.engineer
+dn: uid=quality.engineer,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: quality.engineer
+givenName: Alexandra
+sn: Herman
+displayName: Alexandra, Herman
+title: Quality Engineer
+description: Quality Engineer
+department: Quality
+mail: quality.engineer@acme.com
+userPassword: password123
+
+# User: quality.technician
+dn: uid=quality.technician,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: quality.technician
+givenName: Vickie
+sn: Roberts
+displayName: Vickie, Roberts
+title: Quality Technician
+description: Quality Technician
+department: Quality
+mail: quality.technician@acme.com
+userPassword: password123
+
+# User: quality.manager
+dn: uid=quality.manager,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: quality.manager
+givenName: Morris
+sn: Thompson
+displayName: Morris, Thompson
+title: Quality Manager
+description: Quality Manager
+department: Quality
+mail: quality.manager@acme.com
+userPassword: password123
+
+# User: receiving.clerk
+dn: uid=receiving.clerk,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: receiving.clerk
+givenName: Willow
+sn: Barton
+displayName: Willow, Barton
+title: Receiving Clerk
+description: Receiving Clerk
+department: Production Control
+mail: receiving.clerk@acme.com
+userPassword: password123
+
+# User: shipping.clerk
+dn: uid=shipping.clerk,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: shipping.clerk
+givenName: Jordan
+sn: Armstrong
+displayName: Jordan, Armstrong
+title: Shipping Clerk
+description: Shipping Clerk
+department: Production Control
+mail: shipping.clerk@acme.com
+userPassword: password123
+
+# User: shipping.supervisor
+dn: uid=shipping.supervisor,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: shipping.supervisor
+givenName: Elena
+sn: Purdy
+displayName: Elena, Purdy
+title: Shipping Supervisor
+description: Shipping Supervisor
+department: Production Control
+mail: shipping.supervisor@acme.com
+userPassword: password123
+
+# User: technical.administrator
+dn: uid=technical.administrator,ou=users,dc=example,dc=local
+objectClass: inetOrgPerson
+uid: technical.administrator
+givenName: Todd
+sn: Fisher
+displayName: Todd, Fisher
+title: Technical Administrator
+description: Technical Administrator
+department: Information Technology
+mail: technical.administrator@acme.com
+userPassword: password123
+

@@ -65,10 +65,25 @@ return [
             'model' => env('AUTH_MODEL', App\Models\User::class),
         ],
 
-        // 'users' => [
-        //     'driver' => 'database',
-        //     'table' => 'users',
-        // ],
+        'ldap' => [
+            'driver' => 'ldap',
+            'model' => \LdapRecord\Models\ActiveDirectory\User::class,
+            'rules' => [],
+            'database' => [
+                'model' => App\Models\DomainAccount::class,
+                'sync_passwords' => true,
+                'sync_attributes' => [
+                    'username' => 'samaccountname',
+                    'first_name' => 'givenname',
+                    'last_name' => 'sn',
+                    'display_name' => 'displayname',
+                    'title' => 'title',
+                    'description' => 'description',
+                    'department' => 'department',
+                    'email' => 'mail',
+                ]
+            ]
+        ]
     ],
 
     /*

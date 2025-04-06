@@ -5,7 +5,7 @@ ou: users
 
 # User: it.admin
 dn: uid=it.admin,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: it.admin
 givenName: Cassius
 sn: Marcellus
@@ -18,7 +18,7 @@ userPassword: password123
 
 # User: accountant
 dn: uid=accountant,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: accountant
 givenName: Wendy
 sn: Green
@@ -31,7 +31,7 @@ userPassword: password123
 
 # User: electrical.engineer
 dn: uid=electrical.engineer,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: electrical.engineer
 givenName: Mathew
 sn: Klein
@@ -44,7 +44,7 @@ userPassword: password123
 
 # User: esh.facilitator
 dn: uid=esh.facilitator,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: esh.facilitator
 givenName: Lawrence
 sn: Glover
@@ -57,7 +57,7 @@ userPassword: password123
 
 # User: hr.assistant
 dn: uid=hr.assistant,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: hr.assistant
 givenName: Addie
 sn: Tremblay
@@ -70,7 +70,7 @@ userPassword: password123
 
 # User: industrial.engineer
 dn: uid=industrial.engineer,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: industrial.engineer
 givenName: Nico
 sn: Buckridge
@@ -83,7 +83,7 @@ userPassword: password123
 
 # User: irm.manager
 dn: uid=irm.manager,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: irm.manager
 givenName: Gregory
 sn: Gleason
@@ -96,7 +96,7 @@ userPassword: password123
 
 # User: irm.operator
 dn: uid=irm.operator,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: irm.operator
 givenName: Orlando
 sn: West
@@ -109,7 +109,7 @@ userPassword: password123
 
 # User: lab.technician
 dn: uid=lab.technician,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: lab.technician
 givenName: Jonas
 sn: Koepp
@@ -122,7 +122,7 @@ userPassword: password123
 
 # User: line.leader
 dn: uid=line.leader,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: line.leader
 givenName: Aaron
 sn: Bartell
@@ -135,7 +135,7 @@ userPassword: password123
 
 # User: maintenance.technician
 dn: uid=maintenance.technician,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: maintenance.technician
 givenName: Leslie
 sn: Keebler
@@ -148,7 +148,7 @@ userPassword: password123
 
 # User: materials.control
 dn: uid=materials.control,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: materials.control
 givenName: Noel
 sn: Powlowski
@@ -161,7 +161,7 @@ userPassword: password123
 
 # User: materials.manager
 dn: uid=materials.manager,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: materials.manager
 givenName: Charley
 sn: Olsen
@@ -174,7 +174,7 @@ userPassword: password123
 
 # User: materials.planner
 dn: uid=materials.planner,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: materials.planner
 givenName: Robby
 sn: Johns
@@ -187,7 +187,7 @@ userPassword: password123
 
 # User: mold.cleaner
 dn: uid=mold.cleaner,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: mold.cleaner
 givenName: Stan
 sn: Blick
@@ -200,7 +200,7 @@ userPassword: password123
 
 # User: process.engineer
 dn: uid=process.engineer,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: process.engineer
 givenName: Hester
 sn: Davis
@@ -213,7 +213,7 @@ userPassword: password123
 
 # User: production.scheduler
 dn: uid=production.scheduler,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: production.scheduler
 givenName: Kirk
 sn: Miller
@@ -226,7 +226,7 @@ userPassword: password123
 
 # User: production.supervisor
 dn: uid=production.supervisor,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: production.supervisor
 givenName: Ann
 sn: McCullough
@@ -239,7 +239,7 @@ userPassword: password123
 
 # User: quality.engineer
 dn: uid=quality.engineer,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: quality.engineer
 givenName: Alexandra
 sn: Herman
@@ -252,7 +252,7 @@ userPassword: password123
 
 # User: quality.technician
 dn: uid=quality.technician,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: quality.technician
 givenName: Vickie
 sn: Roberts
@@ -265,7 +265,7 @@ userPassword: password123
 
 # User: quality.manager
 dn: uid=quality.manager,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: quality.manager
 givenName: Morris
 sn: Thompson
@@ -278,7 +278,7 @@ userPassword: password123
 
 # User: receiving.clerk
 dn: uid=receiving.clerk,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: receiving.clerk
 givenName: Willow
 sn: Barton
@@ -291,7 +291,7 @@ userPassword: password123
 
 # User: shipping.clerk
 dn: uid=shipping.clerk,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: shipping.clerk
 givenName: Jordan
 sn: Armstrong
@@ -304,7 +304,7 @@ userPassword: password123
 
 # User: shipping.supervisor
 dn: uid=shipping.supervisor,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: shipping.supervisor
 givenName: Elena
 sn: Purdy
@@ -317,7 +317,7 @@ userPassword: password123
 
 # User: technical.administrator
 dn: uid=technical.administrator,ou=users,dc=example,dc=local
-objectClass: customPerson
+objectClass: inetOrgPerson
 uid: technical.administrator
 givenName: Todd
 sn: Fisher

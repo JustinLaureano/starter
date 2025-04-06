@@ -105,7 +105,7 @@ class GenerateLdif extends Command
             // Write user entry to LDIF
             fwrite($ldifHandle, "# User: $username\n");
             fwrite($ldifHandle, "dn: uid=$username,$ou,$baseDn\n");
-            fwrite($ldifHandle, "objectClass: inetOrgPerson\n");
+            fwrite($ldifHandle, "objectClass: user\n");
             fwrite($ldifHandle, "uid: $username\n"); // Maps to samaccountname
             if (!empty($givenName)) fwrite($ldifHandle, "givenName: $givenName\n");
             if (!empty($sn)) fwrite($ldifHandle, "sn: $sn\n");

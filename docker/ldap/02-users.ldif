@@ -1,0 +1,9 @@
+dn: uid=jdoe,dc=example,dc=local
+objectClass: inetOrgPerson
+objectClass: user
+cn: John Doe
+sn: Doe
+uid: jdoe
+mail: jdoe@example.local
+sAMAccountName: jdoe
+department: IT

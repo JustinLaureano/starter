@@ -176,13 +176,23 @@ services:
         image: osixia/openldap:latest
         ports:
             - "389:389"
+            - "636:636"
         environment:
             LDAP_ORGANISATION: "Example Inc."
             LDAP_DOMAIN: "example.local"
             LDAP_ADMIN_PASSWORD: "adminpassword"
         volumes:
-            - ldap-data:/var/lib/ldap
-            - ldap-config:/etc/ldap/slapd.d
+            - ./docker/ldap/01-schema.ldif:/container/init/01-schema.ldif:ro
+            - ./docker/ldap/02-users.ldif:/container/init/02-users.ldif:ro
+            - ./docker/ldap/init-schema.sh:/container/init/init-schema.sh:ro
+        command: --copy-service --loglevel debug
+        entrypoint: >
+            bash -c "
+                /container/tool/run --copy-service &&
+                sleep 5 &&
+                /container/init/init-schema.sh &&
+                tail -f /dev/null
+            "
         networks:
             - sail
 

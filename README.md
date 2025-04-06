@@ -64,3 +64,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+
+## Install LDAP users
+
+after sail is running for first time, run these commands to seed the ldap userbase.
+
+```bash
+chmod +x ./docker/ldap/init.sh
+
+docker exec -it starter-ldap-1 ldapadd -Y EXTERNAL -H ldapi:/// -f /container/bootstrap/01-custom-schema.ldif
+docker exec -it starter-ldap-1 ldapadd -x -D "cn=admin,dc=example,dc=local" -w adminpassword -f /container/bootstrap/02-users.ldif
+```

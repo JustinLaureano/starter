@@ -182,17 +182,12 @@ services:
             LDAP_DOMAIN: "example.local"
             LDAP_ADMIN_PASSWORD: "adminpassword"
         volumes:
-            - ./docker/ldap/01-schema.ldif:/container/init/01-schema.ldif:ro
-            - ./docker/ldap/02-users.ldif:/container/init/02-users.ldif:ro
-            - ./docker/ldap/init-schema.sh:/container/init/init-schema.sh:ro
+            - ldap-data:/var/lib/ldap
+            - ldap-config:/etc/ldap/slapd.d
+            - ./docker/ldap/bootstrap:/container/bootstrap:ro
+            - ./docker/ldap/init.sh:/container/init.sh:ro
         command: --copy-service --loglevel debug
-        entrypoint: >
-            bash -c "
-                /container/tool/run --copy-service &&
-                sleep 5 &&
-                /container/init/init-schema.sh &&
-                tail -f /dev/null
-            "
+        entrypoint: ["/bin/bash", "-c", "/container/tool/run --copy-service --loglevel debug && bash /container/init.sh"]
         networks:
             - sail
 
